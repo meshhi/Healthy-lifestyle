@@ -10,8 +10,13 @@
     src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff") format("woff");
 }
 
-body {
+*, *::after, *::before {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: "Open Sans Regular", sans-serif;
 }
 
@@ -19,7 +24,6 @@ a {
     text-decoration: none;
     color: white;
 }
-
 
 
 .visually-hidden {
