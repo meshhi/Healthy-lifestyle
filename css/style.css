@@ -275,6 +275,13 @@ a {
     z-index: 0;
 }
 
+.trends__card-inner {
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 17%;
+    border: 1px solid orange;
+}
+
 .trends__card:nth-child(2) {
     background-image: url('../img/trend1.jpg');
 }
