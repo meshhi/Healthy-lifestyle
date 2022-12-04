@@ -490,20 +490,39 @@
     </div>
     <div class="popup-win">
         <div class="inner-win">
-            <h3 class="popup-form__title">Ваш фидбек</h3>
-            <form action="">
-                <label for="visits-count">Как часто вы заходите на сайт?</label>
-                <input name="visits-count" type="number" placeholder="Почти каждый день">
+            <div class="inner-close">
 
-                <label for="email-flag">Вы подписаны на email-рассылку?</label>
-                <input type="radio" value="Да" name="email-flag" id="">
-                <input type="radio" value="Нет" name="email-flag" id="">
+            </div>
+            <div class="inner-form">
+                <h3 class="popup-form__title">Ваш фидбек</h3>
+                <form class="popup__form" action="">
+                    <label for="visits-count">Как часто вы заходите на сайт?</label>
+                    <div class="input-wrapper">
+                        <input class="popup__visits-count" name="visits-count" type="number" placeholder="Почти каждый день">
+                        <div class="input-arrows">
+                            <div class="arrow-up"></div>
+                            <div class="arrow-down"></div>
+                        </div>
+                    </div>
 
-                <label for="recommends">Расскажите какой контент вы хотели бы видеть на нашем сайте</label>
-                <input name="recommends" type="text" class="text" placeholder="Может, больше рецептов?">
+                    <label for="email-flag">Вы подписаны на email-рассылку?</label>
+                    <div class="radio-wrapper">
+                        <label for="">
+                            <input class="popup-radio" type="radio" value="Да" name="email-flag" id="">
+                            Да
+                        </label>
+                        <label for="">
+                            <input class="popup-radio" type="radio" value="Нет" name="email-flag" id="">
+                            Нет
+                        </label>
+                    </div>
 
-                <button type="submit">Отправить</button>
-            </form>
+                    <label for="recommends">Расскажите какой контент вы хотели бы видеть на нашем сайте</label>
+                    <textarea name="recommends" class="popup-input-text" placeholder="Может, больше рецептов?"></textarea>
+
+                    <button class="popup-submit" type="submit">Отправить</button>
+                </form>
+            </div>
         </div>
     </div>
 </body>
