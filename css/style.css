@@ -276,10 +276,24 @@ a {
 }
 
 .trends__card-inner {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 94%;
+    transform: translateY(-100%);
     margin-left: 4%;
     margin-right: 4%;
-    margin-bottom: 17%;
-    border: 1px solid orange;
+    border: 3px solid #706339;
+}
+
+.trends__tags {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.trends__title {
+
 }
 
 .trends__card:nth-child(2) {
