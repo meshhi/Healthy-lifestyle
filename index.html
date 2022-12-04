@@ -464,9 +464,7 @@
                     </div>
                 </section>
             </aside>
-
         </div>
-
         <footer class="site-footer">
             <address class="links__icons">
                 <ul class="icons-list">
@@ -489,7 +487,25 @@
             </address>
             <div class="links__copyright"><a href="">Copyright © 2009–2019 City Blog LLC.</a></div>
         </footer>
-    <div>
+    </div>
+    <div class="popup-win">
+        <div class="inner-win">
+            <h3 class="popup-form__title">Ваш фидбек</h3>
+            <form action="">
+                <label for="visits-count">Как часто вы заходите на сайт?</label>
+                <input name="visits-count" type="number" placeholder="Почти каждый день">
+
+                <label for="email-flag">Вы подписаны на email-рассылку?</label>
+                <input type="radio" value="Да" name="email-flag" id="">
+                <input type="radio" value="Нет" name="email-flag" id="">
+
+                <label for="recommends">Расскажите какой контент вы хотели бы видеть на нашем сайте</label>
+                <input name="recommends" type="text" class="text" placeholder="Может, больше рецептов?">
+
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>
