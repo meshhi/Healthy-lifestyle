@@ -276,10 +276,18 @@ a {
 }
 
 .trends__card-inner {
+    font-family: "Open Sans Bold";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: uppercase;
+    position: absolute;
+    height: 125px;
+    margin-top: 90px;
     margin-left: 4%;
     margin-right: 4%;
-    margin-bottom: 17%;
-    border: 1px solid orange;
+    margin-bottom: 15px;
+    border: 3px solid #897c53;
 }
 
 .trends__card:nth-child(2) {
@@ -296,6 +304,20 @@ a {
 
 .trends__card:nth-child(5) {
     background-image: url('../img/trend4.jpg');
+}
+
+.trends__tags {
+    color: #b59f5b;
+    line-height: 32.5px;
+    font-size: 14px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.trends__title {
+    font-size: 16px;
+    line-height: 26px;
 }
 
 .blog-articles {
