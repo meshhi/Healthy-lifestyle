@@ -792,7 +792,7 @@ a {
 /* =============== POPUP */
 
 .popup-win {
-    display: none;
+    /* display: none; */
 
     position: absolute;
     top: 0;
@@ -808,7 +808,8 @@ a {
     flex-direction: column;
     height: 550px;
     width: 90%;
-    margin: 22px auto;
+    margin: 50px auto;
+    max-width: 370px;
 }
 
 .inner-close {
