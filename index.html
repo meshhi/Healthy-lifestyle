@@ -437,59 +437,6 @@
                             <li class="themes__item"><a href="">Йога</a><span class=themes__span>8</span></li>
                         </ul>
                     </section>
-                    <!-- <section class="sidebar__our-goods">
-                        <h3 class="our-goods__title">Наши изделия</h3>
-                        <div class="goods-list">
-                            <article class="goods-card">
-                                <div class="goods-img-wrapper">
-                                    <img srcset="./img/shop-item-mobile1.jpg 360w, ./img/shop-item-tablet1.jpg 768w, /img/shop-item-desk1.jpg 1200w," sizes="(max-width: 360px) 360px, (max-width: 768px) 768px, 1200px" alt="" class="goods-image">
-                                </div>
-                                <div class="goods-content">
-                                    <h4 class="goods-title">Подушки на диван</h4>
-                                    <span class="goods-description">Набор из двух подушек с модными принтами. Видео о создании <a class="inline-link" href="">здесь.</a></span>
-                                    <div class="goods-act">
-                                        <div class="goods-price">
-                                            <span class="old-price">1000 ₽</span>
-                                            <span class="new-price">800 ₽</span>
-                                        </div>
-                                        <a class="goods-btn-link" href="">В магазин</a>
-                                    </div>
-                                </div>
-                            </article>
-                            <article class="goods-card">
-                                <div class="goods-img-wrapper">
-                                    <img srcset="./img/shop-item-mobile2.jpg 360w, ./img/shop-item-tablet2.jpg 768w, /img/shop-item-desk2.jpg 1200w," sizes="(max-width: 360px) 360px, (max-width: 768px) 768px, 1200px" alt="" class="goods-image">
-    
-                                </div>
-                                <div class="goods-content">
-                                    <h4 class="goods-title">Кукла "Зайчик"</h4>
-                                    <span class="goods-description">Интерьерная рукодельная кукла "Зайчик", созданию которой посвящена <a class="inline-link" href="">весенняя серия постов</a> в блоге и несколько подкастов.</span>
-                                    <div class="goods-act">
-                                        <div class="goods-price">
-                                            <span class="new-price">3500 ₽</span>
-                                        </div>
-                                        <a class="goods-btn-link" href="">В магазин</a>
-                                    </div>
-                                </div>
-                            </article>
-                            <article class="goods-card">
-                                <div class="goods-img-wrapper">
-                                    <img srcset="./img/shop-item-mobile3.jpg 360w, ./img/shop-item-tablet3.jpg 768w, /img/shop-item-desk3.jpg 1200w," sizes="(max-width: 360px) 360px, (max-width: 768px) 768px, 1200px" alt="" class="goods-image">
-                                </div>    
-                                <div class="goods-content">
-                                    <h4 class="goods-title">Шестиугольная рамка</h4>
-                                    <span class="goods-description">Необычная рамка для украшения дома из видео <a class="inline-link" href="">"Как сделать рамку из подручных средств за 30 минут"</a></span>
-                                    <div class="goods-act">
-                                        <div class="goods-price">
-                                            <span class="old-price">500 ₽</span>
-                                            <span class="new-price">400 ₽</span>
-                                        </div>
-                                        <a class="goods-btn-link" href="">В магазин</a>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                    </section> -->
                 </aside>
             </div>
 
@@ -498,10 +445,15 @@
                     <h3 class="our-goods__title">Наши изделия</h3>
                     <div class="goods-list">
                         <article class="goods-card">
-                            <img srcset="./img/shop-item-mobile1.jpg 360w, ./img/shop-item-tablet1.jpg 768w, ./img/shop-item-desk1.jpg 1200w," sizes="(max-width: 360px) 360px, (max-width: 768px) 768px, 1200px" alt="" class="goods-image">
+                            <picture class="goods-image">
+                                <source media="(max-width: 360px)" srcset="./img/shop-item-mobile1.jpg" />
+                                <source media="(max-width: 768px)" srcset="./img/shop-item-tablet1.jpg" />
+                                <source media="(min-width: 769px)" srcset="./img/shop-item-desk1.jpg" />
+                                <img src="./img/shop-item-desk3.jpg" alt="">
+                            </picture>
                             <div class="goods-content">
                                 <h4 class="goods-title">Подушки на диван</h4>
-                                <span class="goods-description">Набор из двух подушек с модными принтами. Видео о создании <a class="inline-link" href="">здесь.</a></span>
+                                <p class="goods-description">Набор из двух подушек с модными принтами. Видео о создании <a class="inline-link" href="">здесь.</a></p>
                                 <div class="goods-act">
                                     <div class="goods-price">
                                         <span class="old-price">1000 ₽</span>
@@ -512,10 +464,15 @@
                             </div>
                         </article>
                         <article class="goods-card">
-                            <img srcset="./img/shop-item-mobile2.jpg 360w, ./img/shop-item-tablet2.jpg 768w, ./img/shop-item-desk2.jpg 1200w," sizes="(max-width: 360px) 360px, (max-width: 768px) 768px, 1200px" alt="" class="goods-image">
-                            <div class="goods-content">
+                            <picture class="goods-image">
+                                <source media="(max-width: 360px)" srcset="./img/shop-item-mobile2.jpg" />
+                                <source media="(max-width: 768px)" srcset="./img/shop-item-tablet2.jpg" />
+                                <source media="(min-width: 769px)" srcset="./img/shop-item-desk2.jpg" />
+                                <img src="./img/shop-item-desk3.jpg" alt="">
+                            </picture>
+                            <div class="goods-content"> 
                                 <h4 class="goods-title">Кукла "Зайчик"</h4>
-                                <span class="goods-description">Интерьерная рукодельная кукла "Зайчик", созданию которой посвящена <a class="inline-link" href="">весенняя серия постов</a> в блоге и несколько подкастов.</span>
+                                <p class="goods-description">Интерьерная рукодельная кукла "Зайчик", созданию которой посвящена <a class="inline-link" href="">весенняя серия постов</a> в блоге и несколько подкастов.</p>
                                 <div class="goods-act">
                                     <div class="goods-price">
                                         <span class="new-price">3500 ₽</span>
@@ -525,10 +482,15 @@
                             </div>
                         </article>
                         <article class="goods-card">
-                            <img srcset="./img/shop-item-mobile3.jpg 360w, ./img/shop-item-tablet3.jpg 768w, ./img/shop-item-desk3.jpg 1200w," sizes="(max-width: 360px) 360px, (max-width: 768px) 768px, 1200px" alt="" class="goods-image">
+                            <picture class="goods-image">
+                                <source media="(max-width: 360px)" srcset="./img/shop-item-mobile3.jpg" />
+                                <source media="(max-width: 768px)" srcset="./img/shop-item-tablet3.jpg" />
+                                <source media="(min-width: 769px)" srcset="./img/shop-item-desk3.jpg" />
+                                <img src="./img/shop-item-desk3.jpg" alt="">
+                            </picture>
                             <div class="goods-content">
                                 <h4 class="goods-title">Шестиугольная рамка</h4>
-                                <span class="goods-description">Необычная рамка для украшения дома из видео <a class="inline-link" href="">"Как сделать рамку из подручных средств за 30 минут"</a></span>
+                                <p class="goods-description">Необычная рамка для украшения дома из видео <a class="inline-link" href="">"Как сделать рамку из подручных средств за 30 минут"</a></p>
                                 <div class="goods-act">
                                     <div class="goods-price">
                                         <span class="old-price">500 ₽</span>
@@ -575,7 +537,9 @@
                 <form class="popup__form" action="">
                     <label for="visits-count">Как часто вы заходите на сайт?</label>
                     <div class="input-wrapper">
-                        <input class="popup__visits-count" name="visits-count" type="number" placeholder="Почти каждый день">
+                        <select class="popup__visits-count" name="visits-count">
+                            <option value="" disabled selected>Почти каждый день</option>
+                        </select>
                         <div class="input-arrows">
                             <div class="arrow-up"></div>
                             <div class="arrow-down"></div>
@@ -584,11 +548,11 @@
 
                     <label for="email-flag">Вы подписаны на email-рассылку?</label>
                     <div class="radio-wrapper">
-                        <label for="">
+                        <label>
                             <input class="popup-radio" type="radio" value="Да" name="email-flag" id="">
                             Да
                         </label>
-                        <label for="">
+                        <label>
                             <input class="popup-radio" type="radio" value="Нет" name="email-flag" id="">
                             Нет
                         </label>
