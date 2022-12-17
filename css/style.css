@@ -747,7 +747,6 @@ a {
     display: inline-block;
     font-size: 15px;
     line-height: 27px;
-    font-weight: 600;
 }
 
 .inline-link {
@@ -1046,6 +1045,14 @@ input::-webkit-inner-spin-button {
         width: 50%;
     }
 
+    /* main {
+        flex: 1;
+    }
+
+    aside {
+        flex-basis: 280px;
+    } */
+
     .trends__card {
         width: calc(50% - 2px);
     }
@@ -1114,7 +1121,7 @@ input::-webkit-inner-spin-button {
     }
 
     .trends__list-wrapper {
-
+        width: 100%;
     }
 
     .trends__card {
@@ -1142,7 +1149,7 @@ input::-webkit-inner-spin-button {
     }
 
     .sidebar {
-        flex: 1;
+        flex-basis: 280px;
     }
 
     .card__text {
@@ -1150,7 +1157,8 @@ input::-webkit-inner-spin-button {
     }
 
     .goods {
-        padding-inline: 14.7%;
+        max-width: 1200px;
+        margin: 0 auto;
     }
 
     .goods-list {
