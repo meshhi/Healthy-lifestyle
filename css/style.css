@@ -1043,13 +1043,13 @@ input::-webkit-inner-spin-button {
         width: 50%;
     }
 
-    /* main {
+    main {
         flex: 1;
     }
 
     aside {
         flex-basis: 280px;
-    } */
+    }
 
     .trends__card {
         width: calc(50% - 2px);
